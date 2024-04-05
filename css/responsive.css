@@ -80,6 +80,11 @@
     text-align: center;
     margin-top: 2rem;
 }
+.testimonial-left .testimonial-rating {
+    display: flex;
+    justify-content: center;
+}
+
 
 }
 
