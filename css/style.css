@@ -57,6 +57,46 @@ a{
     background: #fff;
     padding: 8px;
 }
+
+.card-overlay {
+    position: absolute;
+    background-color: #24262bb0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    transition: .3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.view-detail-btn {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: .4s ease-in-out;
+}
+.view-detail-btn:hover{
+    transform: translateY(5px);
+    transition: .4s ease-in-out;
+}
+.view-detail-btn a{
+    color: #e30613;
+    font-size: 12px;
+}
+.view-detail-btn a:hover{
+    color: #E30613;
+}
+.today-offer-image {
+    position: relative;
+}
+.today-offer-image:hover .card-overlay{
+    opacity: 1;
+}
+
+
 /* header css */
 .top-header {
     background-color: var(--primary-color);
