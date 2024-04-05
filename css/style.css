@@ -266,6 +266,20 @@ section.rose-collections-section {
     padding: 1px 3px;
     margin-bottom: 10px;
 }
+
+.bottom-content i {
+    color: #fff;
+    background: #329962;
+    padding: 5px;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+.bottom-content h6 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #212025;
+}
+
 .rating-text p {
     font-size: 12px;
 }
@@ -478,9 +492,10 @@ section.Flower.Arrangements {
     color: #fff;
 }
 .footer h6, span {
-    color: #AAAAAA;
+    color: #747474;
     margin-bottom: 0;
     font-size: 12px;
+    text-decoration: underline;
 }
 .social-icons {
     display: flex;

@@ -126,5 +126,17 @@
         text-align: center;
     }
 
+    section.valentines-collections h6 {
+        font-size: 12px;
+    }
+    section.valentines-collections h3{
+        font-size: 1.2rem;
+    }
 
+    .right-content .delivery a {
+        font-size: 10px;
+    }
+    .contact-details h5 {
+        font-size: 10px;
+    }
 }
