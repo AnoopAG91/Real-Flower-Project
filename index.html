@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Flower</title>
+
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!--fontawesome link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+  <div class="top-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 top-left d-flex align-items-center top-content">
+
+          <div class="logo-div">
+            <a class="navbar-brand" href="#">
+              <img src="images/header/logo.png" alt="">
+            </a>
+          </div>
+          <div class="input-div">
+            <input type="text" placeholder="search flowers...">
+            <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+
+
+        </div>
+
+        <div class="col-lg-6 col-sm-12 top-right">
+          <div class="right-content">
+            <div class="delivery">
+              <div class="delivery-icon d-flex gap-1">
+                <img src="images/header/deliver-icon.svg" alt="">
+                <h5>Deliver To</h5>
+              </div>
+              <div class="links">
+                <a href="#">Dubai</a>
+                <a href="#">Sharjah</a>
+                <a href="#">Ajman</a>
+                <a href="#">Abu Dhabi</a>
+              </div>
+            </div>
+            <div class="contact-info">
+              <div class="contact-icon d-flex gap-1">
+                <img src="images/header/phone-icon.svg" alt="">
+                <h5>Call Us</h5>
+              </div>
+              <div class="contact-details">
+                <h5>+97 150 100 8029, +97 148 244 112</h5>
+              </div>
+            </div>
+            <div class="login d-flex gap-1">
+              <div class="login-image">
+                <a href="#">
+                  <img src="images/header/login-icon.svg" alt="">
+                  <h5>Login</h5>
+                </a>
+              </div>
+
+            </div>
+            <div class="cart d-flex gap-1">
+              <div class="cart-image">
+                <img src="images/header/cart-icon.svg" alt="">
+              </div>
+              <div class="count">0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- dropdown section starts here  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand dropdown-title" href="#">Your Wish List</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Today's Offer
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Rose Collection
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Valentines Day Flowers
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Birthday Flowers
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Premium Flowers
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              By Color
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              By Occassions
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- banner section  -->
+  <section class="banner">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Left Image Column -->
+        <div class="col-md-8">
+          <div class="banner-left">
+            <img src="images/banner/banner-img-1.png" alt="">
+          </div>
+        </div>
+
+        <!-- Right Content Column-->
+        <div class="col-md-4">
+          <div class="banner-right">
+            <div class="banner-right-top">
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/banner/banner-img-2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/banner/banner-img-3.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/banner/banner-img-2.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="banner-right-bottom">
+              <img src="images/banner/banner-img-3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="order-section section-wrapper">
+
+    <div class="container text-center">
+      <h1 class="text-center">Order Online for Flowers Delivery in Dubai, Sharjah & Ajman</h1>
+      <div class="view-all-btn text-center">
+        <a href="#">
+          View All <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-sm-4 col-md-4 col-lg-2">
+          <div class="ordr-image">
+            <img src="images/order-flower/ordr-flower1.png" alt="">
+            <h4>Valentine Flower</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-2">
+          <div class="ordr-image">
+            <img src="images/order-flower/ordr-flower2.png" alt="">
+            <h4>Birthday Flowers</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-2">
+          <div class="ordr-image">
+            <img src="images/order-flower/ordr-flower3.png" alt="">
+            <h4>VIP Flowers</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-2">
+          <div class="ordr-image">
+            <img src="images/order-flower/ordr-flower4.png" alt="">
+            <h4>Gerberas</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-2">
+          <div class="ordr-image">
+            <img src="images/order-flower/ordr-flower5.png" alt="">
+            <h4>Roses</h4>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-2">
+          <div class="ordr-image">
+            <img src="images/order-flower/ordr-flower6.png" alt="">
+            <h4>Flower Hampers</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="todays-offers-section section-wrapper">
+    <div class="container">
+      <div class="title">
+        <h1 class="text-start">Today's Offers</h1>
+        <div class="view-all-btn">
+          <a href="#">View All <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/todays offer/todays-offer-img1.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="rating">(270)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/todays offer/todays-offer-img3.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="rating">(152)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/todays offer/todays-offer-img4.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(94)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/todays offer/todays-offer-img5.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(112)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/todays offer/todays-offer-img2.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(325)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/todays offer/todays-offer-img1.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(356)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="rose-collections-section section-wrapper">
+    <div class="container">
+      <div class="title">
+        <h1 class="text-start">Rose Collections</h1>
+        <div class="view-all-btn">
+          <a href="#">View All <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/rose-collections/rose-collections1.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="rating">(270)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/rose-collections/rose-collections2.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="rating">(152)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/rose-collections/rose-collections3.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(94)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/rose-collections/rose-collections4.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(112)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/rose-collections/rose-collections5.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(325)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/rose-collections/rose-collections6.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(356)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="combo-gifts-section section-wrapper">
+    <div class="container">
+      <div class="title">
+        <h1 class="text-start">Combo Gifts</h1>
+        <div class="view-all-btn">
+          <a href="#">View All <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/combo-gift/combo-gift1.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="rating">(270)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/combo-gift/combo-gift2.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="rating">(152)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/combo-gift/combo-gift3.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(94)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/combo-gift/combo-gift4.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(112)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/combo-gift/combo-gift5.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(325)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/combo-gift/combo-gift1.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(356)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial-wrapper section-wrapper">
+    <h1>What Our Customer Says!</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12">
+          <div class="testimonial-left">
+            <h4>EXCELLENT</h4>
+            <div class="star-rating">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>Based on <span class="review-text">9,359 reviews</span></p>
+
+            <div class="bottom-content">
+              <h6><i class="fa-regular fa-star"></i>Trust Pilot</h6>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 carousel-wrapper">
+          <div class="rating-carousel">
+            <div class="testimonial-rating">
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <div class="rating-text">
+              <h5>Great Experience</h5>
+              <h6>great experience. we will use again for sure</h6>
+              <p><span>ziad bouan</span>,18 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6 carousel-wrapper">
+          <div class="rating-carousel">
+            <div class="testimonial-rating">
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <div class="rating-text">
+              <h5>Great Experience</h5>
+              <h6>great experience. we will use again for sure</h6>
+              <p><span>ziad bouan</span>,18 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6 carousel-wrapper">
+          <div class="rating-carousel">
+            <div class="testimonial-rating">
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <div class="rating-text">
+              <h5>Great Experience</h5>
+              <h6>great experience. we will use again for sure</h6>
+              <p><span>ziad bouan</span>,18 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-6 carousel-wrapper">
+          <div class="rating-carousel">
+            <div class="testimonial-rating">
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="star-div">
+                <i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <div class="rating-text">
+              <h5>Great Experience</h5>
+              <h6>great experience. we will use again for sure</h6>
+              <p><span>ziad bouan</span>,18 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="Celebrations section-wrapper">
+    <div class="container">
+      <div class="title">
+        <h1 class="text-start">Celebrations, Big Baskets & Stand Arrangements section-wrapper</h1>
+        <div class="view-all-btn">
+          <a href="#">View All <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/combo-gift/combo-gift1.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="rating">(270)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/combo-gift/combo-gift2.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="rating">(152)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/combo-gift/combo-gift3.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(94)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/combo-gift/combo-gift4.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(112)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/combo-gift/combo-gift5.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(325)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/combo-gift/combo-gift1.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(356)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="Flower-Arrangements section-wrapper">
+    <div class="container">
+      <div class="title">
+        <h1 class="text-start">Flower Arrangements</h1>
+        <div class="view-all-btn">
+          <a href="#">View All <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/rose-collections/rose-collections1.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="rating">(270)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/rose-collections/rose-collections2.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span class="rating">(152)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/rose-collections/rose-collections3.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(94)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/rose-collections/rose-collections4.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(112)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/rose-collections/rose-collections5.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(325)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="todays-offer-content card">
+            <div class="today-offer-image">
+              <img src="images/rose-collections/rose-collections6.png" alt="">
+            </div>
+            <div class="todays-offer-text">
+              <h6>Flowers & Baloons</h6>
+              <h5>AED 321 <span class="price-center-line"><s>AED 500</s></span></h5>
+              <p>Delivery Today</p>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span class="rating">(356)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="valentines-collections section-wrapper">
+    <div class="container-fluid valentines-main-div">
+      <div class="row">
+        <div class="col-12">
+          <div class="bg-image-div">
+            <div class="bg-content">
+              <h6>VALENTINE'S COLLECTION LIBRARY OF MORE THAN 1,600 FLOWERS</h6>
+              <h3>Valentine’s Collections</h3>
+           <a href="#" class="valetines-bg-btn">View Collections</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="item-div">
+            <div class="item">
+              <img src="images/valentines-section/item1.png" alt="">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Doloribus nemo animi cupiditate non repellat sit perferendis dolorum adipisci alias.</p>
+            </div>
+          <div class="item"><img src="images/valentines-section/item2.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+              Doloribus nemo animi cupiditate non repellat sit perferendis dolorum adipisci alias.</p></div>
+          <div class="item"><img src="images/valentines-section/item3.png" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+              Doloribus nemo animi cupiditate non repellat sit perferendis dolorum adipisci alias.</p></div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="latest-blogs section-wrapper">
+    <div class="container">
+      <div class="title">
+        <h1 class="text-start">Latest Blogs</h1>
+        <div class="view-all-btn">
+          <a href="#">View All <i class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </div>
+      <div class="row blogs-div">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="blog-card">
+            <div class="blog-image">
+              <img src="images/blog/blog1.png" alt="">
+            </div>
+            <div class="blog-date">
+              <span class="blog-p">09 feb 2024</span>
+            </div>
+            <div class="blog-title">
+              <h4>Agency Vs. Local Flower Shops: What’s The Difference?</h4>
+            </div>
+            <div class="blog-description">
+              <p>With an impressive 183k Instagram followers and 143k on TikTok, Flowers is rapidly becoming the UAE’s go-to luxury...</p>
+            </div>
+            
+            <a href="#" class="read-post-btn">Read Post <i class="fa-solid fa-arrow-right-long"></i></a>
+            
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="blog-card">
+            <div class="blog-image">
+              <img src="images/blog/blog1.png" alt="">
+            </div>
+            <div class="blog-date">
+              <span class="blog-p">09 feb 2024</span>
+            </div>
+            <div class="blog-title">
+              <h4>Agency Vs. Local Flower Shops: What’s The Difference?</h4>
+            </div>
+            <div class="blog-description">
+              <p>With an impressive 183k Instagram followers and 143k on TikTok, Flowers is rapidly becoming the UAE’s go-to luxury...</p>
+            </div>
+                <a href="#" class="read-post-btn">Read Post <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="blog-card">
+            <div class="blog-image">
+              <img src="images/blog/blog1.png" alt="">
+            </div>
+            <div class="blog-date">
+              <span class="blog-p">09 feb 2024</span>
+            </div>
+            <div class="blog-title">
+              <h4>Agency Vs. Local Flower Shops: What’s The Difference?</h4>
+            </div>
+            <div class="blog-description">
+              <p>With an impressive 183k Instagram followers and 143k on TikTok, Flowers is rapidly becoming the UAE’s go-to luxury...</p>
+            </div>
+                <a href="#" class="read-post-btn">Read Post <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section section-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="content-div">
+            <h2>Real Flowers Delivery in Dubai, Sharjah and Ajman</h2>
+            <p>We are one of the top florists in Dubai and Sharjah U.A.E with 15 years of experience in online order and delivery.
+               Most of the floral concepts from this passionate shop impacts the way of greetings and wishes.
+                As a result, it seems nothing is more effective than <span style="color: red;">sending flowers on the same day</span> to make and maintain a relationship. 
+                Thus, share mutual support and understanding in almost any situation. Lowest prices,
+                 unique designs and fastest delivery will help you connect to your loved one.
+               Save your time and send flowers to Dubai, Sharjah, Ajman easily with the help of this online shop.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="content-div">
+            <h2>Real Flowers Delivery in Dubai, Sharjah and Ajman</h2>
+            <p>We are one of the top florists in Dubai and Sharjah U.A.E with 15 years of experience in online order and delivery.
+               Most of the floral concepts from this passionate shop impacts the way of greetings and wishes.
+                As a result, it seems nothing is more effective than <span style="color: red;">sending flowers on the same day</span> to make and maintain a relationship. 
+                Thus, share mutual support and understanding in almost any situation. Lowest prices,
+                 unique designs and fastest delivery will help you connect to your loved one.
+               Save your time and send flowers to Dubai, Sharjah, Ajman easily with the help of this online shop.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="content-div">
+            <h2>Real Flowers Delivery in Dubai, Sharjah and Ajman</h2>
+            <p>We are one of the top florists in Dubai and Sharjah U.A.E with 15 years of experience in online order and delivery.
+               Most of the floral concepts from this passionate shop impacts the way of greetings and wishes.
+                As a result, it seems nothing is more effective than <span style="color: red;">sending flowers on the same day</span> to make and maintain a relationship. 
+                Thus, share mutual support and understanding in almost any situation. Lowest prices,
+                 unique designs and fastest delivery will help you connect to your loved one.
+               Save your time and send flowers to Dubai, Sharjah, Ajman easily with the help of this online shop.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="content-div">
+            <h2>Real Flowers Delivery in Dubai, Sharjah and Ajman</h2>
+            <p>We are one of the top florists in Dubai and Sharjah U.A.E with 15 years of experience in online order and delivery.
+               Most of the floral concepts from this passionate shop impacts the way of greetings and wishes.
+                As a result, it seems nothing is more effective than <span style="color: red;">sending flowers on the same day</span> to make and maintain a relationship. 
+                Thus, share mutual support and understanding in almost any situation. Lowest prices,
+                 unique designs and fastest delivery will help you connect to your loved one.
+               Save your time and send flowers to Dubai, Sharjah, Ajman easily with the help of this online shop.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="content-div">
+            <h2>Real Flowers Delivery in Dubai, Sharjah and Ajman</h2>
+            <p>We are one of the top florists in Dubai and Sharjah U.A.E with 15 years of experience in online order and delivery.
+               Most of the floral concepts from this passionate shop impacts the way of greetings and wishes.
+                As a result, it seems nothing is more effective than <span style="color: red;">sending flowers on the same day</span> to make and maintain a relationship. 
+                Thus, share mutual support and understanding in almost any situation. Lowest prices,
+                 unique designs and fastest delivery will help you connect to your loved one.
+               Save your time and send flowers to Dubai, Sharjah, Ajman easily with the help of this online shop.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="content-div">
+            <h2>Real Flowers Delivery in Dubai, Sharjah and Ajman</h2>
+            <p>We are one of the top florists in Dubai and Sharjah U.A.E with 15 years of experience in online order and delivery.
+               Most of the floral concepts from this passionate shop impacts the way of greetings and wishes.
+                As a result, it seems nothing is more effective than <span style="color: red;">sending flowers on the same day</span> to make and maintain a relationship. 
+                Thus, share mutual support and understanding in almost any situation. Lowest prices,
+                 unique designs and fastest delivery will help you connect to your loved one.
+               Save your time and send flowers to Dubai, Sharjah, Ajman easily with the help of this online shop.</p>
+          </div>
+        </div>
+      </div>
+       <!-- Back to Top Button -->
+       <div class="back-to-top">
+        <button id="back-to-top-btn" title="Back to Top">Back To Top <i class="fa-solid fa-arrow-up"></i></button>
+       </div>
+    
+    </div>
+
+  </section>
+
+ <section class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-12">
+        <div class="bg-logo">
+          <img src="images/footer/footer-bg-logo.png" alt="">
+          <div class="logo">
+            <img src="images/footer/footer-logo.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-4 d-flex align-items-center justify-content-center">
+        <div class="links">
+          <h4>Real Flowers</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-4 d-flex align-items-center justify-content-center">
+        <div class="top-collections">
+          <h4>Top Collections</h4>
+          <ul>
+            <li><a href="#">Today's Offer</a></li>
+            <li><a href="#">Birth Day's</a></li>
+            <li><a href="#">Womens Day</a></li>
+            <li><a href="#">Wedding</a></li>
+            <li><a href="#">VIP Collections</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-4 d-flex align-items-center justify-content-center">
+        
+        <div class="get-in-touch">
+          <h4>Get In Touch</h4>
+
+          <div class="get-in-touch-div">
+          <div class="phone">
+            <h6>Phone:</h6>
+            <span class="phone">+97 150 100 8029</span>
+          </div>
+          <div class="email">
+            <h6>Email:</h6>
+            <span class="email">support@realflowers.ae</span>
+          </div>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+      
+    </div>
+        
+        <div class="payment-gateway">
+          <img src="images/footer/master_card2x.png" alt="">  
+          <img src="images/footer/net_banking2x.png" alt="">  
+          <img src="images/footer/visa2x.png" alt="">  
+          <img src="images/footer/rupay2x.png" alt="">  
+        </div>
+
+       
+  </div>
+  <hr>
+
+  <div class="copy-right">
+    <h6>© 2024 Real Flowers. All rights reserved.</h6>
+    <h6>Terms of Use      Privacy Policy</h6>
+  </div>
+</section>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
